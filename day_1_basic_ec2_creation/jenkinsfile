@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('git checout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Ruturajkumbhar/Terraform.git'
+            }
+        }
+        stage('terraform init') {
+            steps {
+                dir('day_1_basic_ec2_creation') {
+    sh 'terraform init'
+}
+                
+            }
+        }
+        stage('terraform plan') {
+            steps {
+                dir('day_1_basic_ec2_creation') {
+    sh 'terraform plan'
+}
+            }
+        }
+        stage('terraform apply/destroy') {
+            steps {
+               dir('day_1_basic_ec2_creation') {
+    sh 'terraform ${action} -auto-approve'
+}
+            }
+        }
+        
+    }
+}
