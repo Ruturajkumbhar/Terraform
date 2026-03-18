@@ -1,0 +1,6 @@
+ami_id = "ami-02dfbd4ff395f2a1b"
+instance_type = "t2.micro"
+key_pair_name = "key-pair"
+sg_id = "sg-046773dbf5a1feb17"
+subnet_id = "subnet-0eed5ced499103b63"
+instance_name = "Server"
