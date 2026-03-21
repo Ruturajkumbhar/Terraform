@@ -10,3 +10,7 @@
 # documents
 *.doc
 *.pem
+
+# keys
+
+*.keys
