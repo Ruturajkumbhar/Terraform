@@ -3,112 +3,112 @@
 
 variable "rds_storage" {
   type = string
-  default = ""
+  description = "RDS allocated storage"
 }
 
 variable "rds_name" {
   type = string
-  default = ""
+  description = "RDS database name"
 }
 
 variable "identifier" {
   type = string
-  default = ""
+  description = "RDS identifier"
 }
 
 variable "rds_engine" {
   type = string
-  default = ""
+  description = "RDS Engine"
 }
 
 variable "rds_engine_version" {
   type = string
-  default = ""
+  description = "RDS engine version"
 }
 variable "instance_class" {
   type = string
-  default = ""
+  description = "RDS instance class"
 }
 
 variable "rds_uesrname" {
   type = string
-  default = ""
+  description = "RDS username"
 }
 
 variable "rds_pass" {
   type = string
-  default = ""
+  description = "RDS Password"
 }
 
 variable "parameter_grp_name" {
   type = string
-  default = ""
+  description = "RDS parameter group"
 }
 
 variable "retantion_time" {
   type = string
-  default = ""
+  description = "RDS relation time"
 }
 
 variable "backup_window" {
   type = string
-  default = ""
+  description = "RDS backup window"
 }
 
 variable "monitoring_interval" {
   type = string
-  default = ""
+  description = "RDS monitoring interval"
 }
 
 variable "maintenance_window" {
   type = string
-  default = ""
+  description = "RDS maintenance windows"
 }
 
 #---------------------------IAM----------------------------
 
 variable "iam_name" {
   type = string
-  default = ""
+  description = "IAM role name"
 }
 
 variable "iam_version" {
   type = string
-  default = ""
+  description = "IAM role version"
 }
 
 variable "iam_action" {
   type = string
-  default = ""
+  description = "IAM role action"
 }
 
 variable "iam_effect" {
   type = string
-  default = ""
+  description = "IAM role effect"
 }
 
 variable "iam_service" {
   type = string
-  default = ""
+  description = "IAM role service"
 }
 
 #policy
 
 variable "iam_policy_arn" {
   type = string
-  default = ""
+  description = "IAM policy arn"
 }
 
 #-----------------VPC----------------------
 
 variable "vpc_cidr" {
   type = string
-  default = ""
+  description = "vpc cidr block"
 }
 
 variable "vpc_name" {
   type = string
-  default = ""
+  description = "vpc name"
 }
 
 #--------------------subnet-------------------------
@@ -117,36 +117,36 @@ variable "vpc_name" {
 
 variable "subnet_1_cidr" {
   type = string
-  default = ""
+  description = "subnet 1 cidr block"
 }
 
 variable "subnet_1_az" {
   type = string
-  default = ""
+  description = "subnet 1 availibility zone"
 }
 
 #subnet_2
 
 variable "subnet_2_cidr" {
   type = string
-  default = ""
+  description = "subnet 2 cidr block"
 }
 
 variable "subnet_2_az" {
   type = string
-  default = ""
+  description = "subnet 2 availibility zone"
 }
 
 #db_subnet_grp
 
 variable "db_subnet_grp_name" {
   type = string
-  default = ""
+  description = "RDS subnet group name"
 }
 
 variable "db_subntegrp_tag_name" {
   type = string
-  default = ""
+  description = "RDS subnet group tag"
 }
 
 

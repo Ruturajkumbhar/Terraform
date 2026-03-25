@@ -16,6 +16,8 @@ variable "iam_policy_arn" {
   default = ""
 }
 
+#-------------- Lambda function ---------------------
+
 variable "lambda_func_name" {
   type = string
   default = ""

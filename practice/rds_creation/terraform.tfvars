@@ -8,7 +8,7 @@ rds_engine = "mysql"
 rds_engine_version = "8.0"
 instance_class = "db.t3.micro"
 rds_uesrname = "admin"
-rds_pass = "Cloud123"
+rds_pass = "abcd12345"
 parameter_grp_name = "default.mysql8.0"
 retantion_time = "7"
 backup_window = "02:00-03:00"
@@ -42,7 +42,7 @@ subnet_2_az = "us-east-1b"
 
 #db_subnet_grp
 
-db_subnet_grp_name = "mycutsubnett"
+db_subnet_grp_name = "my_cust_subnet"
 db_subntegrp_tag_name = "My DB subnet group"
 
 
